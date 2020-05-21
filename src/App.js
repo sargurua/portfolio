@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import Fade from 'react-reveal/Fade'
+import Background from './images/code_background.png'
 
 import TerminalAnimation from './components/TerminalAnimation';
 import Portfolio from './components/Portfolio'
@@ -17,16 +17,29 @@ class App extends React.Component {
     })
   }
 
+  sectionStyle = {
+    height: '100%',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: 'cover',
+    backgroundImage: `url(${Background})`
+  };
+
+  content = {
+    height: '100%',
+    width: '100%',
+  };
+
   render() {
     return (
-      <div className="App" style={{height: '100%'}}>
-        {this.state.openPortfolio ?
-        <Fade bottom>
-          <Portfolio/>
-        </Fade>
-        :
-        <TerminalAnimation changeOpenPortfolio={this.changeOpenPortfolio}/>
-      }
+      <div className="App" style={this.sectionStyle}>
+        <div style={this.content}>
+          {this.state.openPortfolio ?
+            <Portfolio/>
+          :
+            <TerminalAnimation changeOpenPortfolio={this.changeOpenPortfolio}/>
+          }
+        </div>
       </div>
     );
   }

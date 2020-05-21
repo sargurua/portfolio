@@ -1,22 +1,39 @@
-import React from 'react'
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Navbar'
-import NavDropdown from 'react-bootstrap/Navbar'
+import FadeIn from 'react-fade-in';
 
-class Header extends React.Component {
-    render() {
-        return (
-            <div>
-                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                    <Navbar.Collapse id="responsive-navbar-nav">
-                    </Navbar.Collapse>
-                </Navbar>
-            </div>
-        )
-    }
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+}));
+
+export default function Header() {
+  const classes = useStyles();
+
+  return (
+    <FadeIn>
+        <div className={classes.root}>
+            <AppBar position="sticky">
+                <Toolbar variant="dense">
+                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+                    <MenuIcon />
+                </IconButton>
+                <Typography variant="h6" color="inherit">
+                    Avinash Sarguru
+                </Typography>
+                </Toolbar>
+            </AppBar>
+        </div>
+    </FadeIn>  
+  );
 }
-
-export default Header
