@@ -4,35 +4,49 @@ import FadeIn from 'react-fade-in';
 
 class Welcome extends React.Component {
     divStyling = {
-        display: 'flex', 
-        margin: '0',
-        flexDirection: 'column',
-        justifyContent: 'flex-end',
-        alignItems: 'flex-start',
-        minHeight: '90vh',
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        textAlign: 'left'
+        /* The image used */
+        background-image: url("photographer.jpg");
+
+        /* Add the blur effect */
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        backgroundPosition: center,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
     }
     elementStyling = {
-        margin: '0',
-        color: 'E9E8ED',
-        textAlign: 'left'
+        backgroundColor: 'rgb(0,0,0)',/* Fallback color */
+        backgroundColor: 'rgba(0,0,0, 0.4)', /* Black w/opacity/see-through */
+        color: 'white',
+        fontWeight: 'bold',
+        border: '3px solid #f1f1f1',
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        zIndex: '2',
+        width: '80%',
+        padding: '20px',
+        textAlign: 'center'
     }
     render() {
         return (
-            <div style={this.divStyling}>
-                <FadeIn delay={150}>
-                    <h1 style={this.elementStyling, {textAlign: 'left', marginBottom: "3vh", marginLeft: "15vh"}}>Avinash Sarguru</h1>
-                    <br/>
-                    <h4 style={this.elementStyling, {marginLeft: "15vh"}}>Fullstack Developer</h4>
-                    <br/>
-                    <h4 style={this.elementStyling, {marginLeft: "15vh"}}>Freelancer</h4>
-                    <br/>
-                    <h4 style={this.elementStyling, {marginBottom: "15vh", marginTop: "0", marginLeft: "15vh"}}>Basketball Enthusiast</h4>
-                </FadeIn>
-            </div>
+                <div style ={this.divStyling}>
+                    <FadeIn delay={150}>
+                        <h1 style={this.elementStyling}>Avinash Sarguru</h1>
+                        <br/>
+                        <h4 style={this.elementStyling}>Fullstack Developer</h4>
+                        <br/>
+                        <h4 style={this.elementStyling}>Freelancer</h4>
+                        <br/>
+                        <h4 style={this.elementStyling}>Basketball Enthusiast</h4>
+                    </FadeIn>
+                </div>
         )
     }
 }
