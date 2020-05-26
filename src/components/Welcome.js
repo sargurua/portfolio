@@ -5,20 +5,21 @@ import FadeIn from 'react-fade-in';
 class Welcome extends React.Component {
     divStyling = {
         /* The image used */
-        background-image: url("photographer.jpg");
+        backgroundImage: `url("./images/code_background")`,
 
         /* Add the blur effect */
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
+        filter: 'blur(8px)',
+        webkitFilter: 'blur(8px)',
 
         /* Full height */
-        height: 100%;
+        height: '100%',
 
         /* Center and scale the image nicely */
-        backgroundPosition: center,
+        backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover'
     }
+
     elementStyling = {
         backgroundColor: 'rgb(0,0,0)',/* Fallback color */
         backgroundColor: 'rgba(0,0,0, 0.4)', /* Black w/opacity/see-through */
