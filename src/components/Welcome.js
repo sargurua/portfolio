@@ -8,11 +8,11 @@ class Welcome extends React.Component {
         backgroundImage: `url("./images/code_background")`,
 
         /* Add the blur effect */
-        filter: 'blur(8px)',
-        webkitFilter: 'blur(8px)',
+        // filter: 'blur(8px)',
+        // webkitFilter: 'blur(8px)',
 
         /* Full height */
-        height: '100%',
+        height: '100vh',
 
         /* Center and scale the image nicely */
         backgroundPosition: 'center',
@@ -33,20 +33,22 @@ class Welcome extends React.Component {
         zIndex: '2',
         width: '80%',
         padding: '20px',
-        textAlign: 'center'
+        textAlign: 'left'
     }
     render() {
         return (
                 <div style ={this.divStyling}>
-                    <FadeIn delay={150}>
-                        <h1 style={this.elementStyling}>Avinash Sarguru</h1>
-                        <br/>
-                        <h4 style={this.elementStyling}>Fullstack Developer</h4>
-                        <br/>
-                        <h4 style={this.elementStyling}>Freelancer</h4>
-                        <br/>
-                        <h4 style={this.elementStyling}>Basketball Enthusiast</h4>
-                    </FadeIn>
+                    <div style={this.elementStyling}>
+                        <FadeIn delay={250}>
+                            <h1>Avinash Sarguru</h1>
+                            <br/>
+                            <h4>>Fullstack Developer</h4>
+                            <br/>
+                            <h4>>Freelancer</h4>
+                            <br/>
+                            <h4>>Basketball Enthusiast</h4>
+                        </FadeIn>
+                    </div>
                 </div>
         )
     }

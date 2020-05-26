@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import Background from './images/code_background.png'
+import Background from './images/code_background_blur.png'
 
 import TerminalAnimation from './components/TerminalAnimation';
 import Portfolio from './components/Portfolio'
@@ -18,7 +18,6 @@ class App extends React.Component {
   }
 
   sectionStyle = {
-    height: '100%',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
@@ -28,6 +27,7 @@ class App extends React.Component {
   content = {
     height: '100%',
     width: '100%',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)'
   };
 
   render() {
