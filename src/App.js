@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 import Background from './images/code_background_blur.png'
 
 import TerminalAnimation from './components/TerminalAnimation';

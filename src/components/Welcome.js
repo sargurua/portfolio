@@ -1,54 +1,41 @@
 import React from 'react'
 
 import FadeIn from 'react-fade-in';
+import Button from 'react-bootstrap/Button'
 
 class Welcome extends React.Component {
     divStyling = {
-        /* The image used */
-        backgroundImage: `url("./images/code_background")`,
-
-        /* Add the blur effect */
-        // filter: 'blur(8px)',
-        // webkitFilter: 'blur(8px)',
-
-        /* Full height */
         height: '100vh',
-
-        /* Center and scale the image nicely */
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover'
+        display: 'flex',
+        alignItems: 'center'
     }
 
     elementStyling = {
-        backgroundColor: 'rgb(0,0,0)',/* Fallback color */
-        backgroundColor: 'rgba(0,0,0, 0.4)', /* Black w/opacity/see-through */
         color: 'white',
-        fontWeight: 'bold',
-        border: '3px solid #f1f1f1',
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        zIndex: '2',
-        width: '80%',
-        padding: '20px',
-        textAlign: 'left'
+        textAlign: 'left',
+        paddingLeft: '5vh',
+        margin: '0'
     }
+
+    h1Styling = {
+        margin: '1vh 0vh 1vh'
+    }
+
     render() {
         return (
                 <div style ={this.divStyling}>
                     <div style={this.elementStyling}>
-                        <FadeIn delay={250}>
-                            <h1>Avinash Sarguru</h1>
+                        <FadeIn delay={300}>
+                            <h1 style={this.h1Styling}>Hey, I'm Avinash Sarguru</h1>
                             <br/>
-                            <h4>>Fullstack Developer</h4>
+                            <h4 style={this.h1Styling}>>Fullstack Developer</h4>
                             <br/>
-                            <h4>>Freelancer</h4>
+                            <h4 style={this.h1Styling}>>Freelancer</h4>
                             <br/>
-                            <h4>>Basketball Enthusiast</h4>
+                            <h4 style={this.h1Styling}>>Basketball Enthusiast</h4>
                         </FadeIn>
                     </div>
+                    <Button variant="outline-info">Info</Button>{' '}
                 </div>
         )
     }
