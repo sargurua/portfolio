@@ -1,7 +1,5 @@
 import React from "react";
 
-import Fade from 'react-reveal'
-
 import Welcome from './Welcome'
 import Header from './Header'
 import About from './About'

@@ -11,7 +11,7 @@ class Welcome extends React.Component {
     }
 
     elementStyling = {
-        color: 'white',
+        color: '#DCDCAA',
         textAlign: 'left',
         paddingLeft: '5vh',
         margin: '0'

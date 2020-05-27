@@ -23,11 +23,8 @@ export default function Header() {
   return (
     <FadeIn>
         <div className={classes.root}>
-            <AppBar position="sticky">
+            <AppBar style={{backgroundColor: '#4EC9B0', color: '#DCDCAA'}} position="sticky">
                 <Toolbar variant="dense">
-                <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-                    <MenuIcon />
-                </IconButton>
                 <Typography variant="h6" color="inherit">
                     Avinash Sarguru
                 </Typography>
