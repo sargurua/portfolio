@@ -4,6 +4,7 @@ import Fade from 'react-reveal'
 
 import Welcome from './Welcome'
 import Header from './Header'
+import About from './About'
 
 class Portfolio extends React.Component {
 
@@ -12,6 +13,7 @@ class Portfolio extends React.Component {
             <div>
                 <Header/>
                 <Welcome/>
+                <About/>
             </div>
         )
     }
