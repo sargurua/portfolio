@@ -9,7 +9,6 @@ class Portfolio extends React.Component {
     render() {
         return (
             <div>
-                <Header/>
                 <Welcome/>
                 <About/>
             </div>
