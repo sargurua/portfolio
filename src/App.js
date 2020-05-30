@@ -23,13 +23,14 @@ class App extends React.Component {
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
-    backgroundImage: `url(${Background})`
+    backgroundImage: `url(${Background})`,
+    overflow: 'hidden'
   };
 
   content = {
     height: '100%',
     width: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)'
+    overlfow: 'hidden'
   };
 
   render() {

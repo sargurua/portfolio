@@ -1,9 +1,45 @@
 .icon {
     opacity: 0.4;
    filter: alpha(opacity=40);
-   zoom: .3;
+   zoom: .22;
+   margin-right: 10vh;
 }
 
 .icon:hover {
+    opacity: 1;
+}
+
+.js-icon {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    zoom: .3;
+    margin-top: 2vh;
+    margin-right: 10vh;
+}
+
+.js-icon:hover {
+    opacity: 1;
+}
+
+.node-icon {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    zoom: .25;
+    margin-right: 10vh;
+}
+
+.node-icon:hover {
+    opacity: 1;
+}
+
+.css-icon {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    zoom: .62;
+    margin-bottom: 10vh;
+    margin-right: 10vh;
+}
+
+.css-icon:hover {
     opacity: 1;
 }

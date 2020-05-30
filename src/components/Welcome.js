@@ -6,15 +6,21 @@ import Button from 'react-bootstrap/Button'
 class Welcome extends React.Component {
     divStyling = {
         height: '100vh',
+        width: '100%',
         display: 'flex',
-        alignItems: 'center'
+        alignItems: 'center',
+        flexDirection: 'row',
+        flexWrap: 'wrap'
     }
 
     elementStyling = {
         color: '#DCDCAA',
         textAlign: 'left',
         paddingLeft: '5vh',
-        margin: '0'
+        margin: '0',
+        display: 'flex',
+        flexDirection: 'column',
+        width: '50%'
     }
 
     h1Styling = {
@@ -35,7 +41,10 @@ class Welcome extends React.Component {
                             <h4 style={this.h1Styling}>>Basketball Enthusiast</h4>
                         </FadeIn>
                     </div>
-                    <Button variant="outline-info">Info</Button>{' '}
+                    <div style={{display: 'flex', flexDirection: 'column', width: '50%'}}>
+                        <p><Button style={{justifyContent: 'flex-end', marginTop: '20vh'}} variant="info">About Me</Button>{' '}</p>
+                    </div>
+
                 </div>
         )
     }
