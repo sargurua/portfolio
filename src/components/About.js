@@ -69,11 +69,16 @@ class About extends React.Component {
                             <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img class="css-icon" src="https://img.icons8.com/color/144/000000/css3.png"/></a></p>
                             <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img class="html-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/600px-HTML5_Badge.svg.png"/></a></p>
                         </div>
-                        <div style={{display: 'flex', flexDirection: 'row', marginTop: '0vh'}}>
+                        <div style={{display: 'flex', flexDirection: 'row', marginTop: '0vh', height: '33%'}}>
                             <p><a href="https://docs.oracle.com/en/java/" target="_blank"><img class="java-icon" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png"/></a></p>
                             <p><a href="https://devdocs.io/cpp/" target="_blank"><img class="cplus-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png"/></a></p>
                             <p><a href="https://docs.python.org/3/" target="_blank"><img class="python-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"/></a></p>
                         </div>
+                        <div style={{display: 'flex', flexDirection: 'row'}}>
+                            <p><a href="https://www.postgresql.org/docs/" target="_blank"><img class="post-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"/></a></p>
+                            <p><a href="https://www.postgresql.org/docs/" target="_blank"><img class="mongo-icon" src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg"/></a></p>
+                        </div>
+                        <div></div>
                     </div>
                 </div>
             </div>

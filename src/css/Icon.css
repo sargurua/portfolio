@@ -36,7 +36,6 @@
     opacity: 0.4;
     filter: alpha(opacity=40);
     zoom: .62;
-    margin-bottom: 10vh;
 }
 
 .css-icon:hover {
@@ -100,5 +99,31 @@
 }
 
 .python-icon:hover {
+    opacity: 1;
+}
+
+.post-icon {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    zoom: .075;
+    margin-top: 5vh;
+    margin-left: 25vh;
+}
+
+.post-icon:hover {
+    opacity: 1;
+}
+
+.mongo-icon {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    zoom: 1.4;
+    margin-top: 1vh;
+    margin-left: 1vh;
+    margin-bottom: 6vh;
+
+}
+
+.mongo-icon:hover {
     opacity: 1;
 }
