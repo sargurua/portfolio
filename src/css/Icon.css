@@ -14,7 +14,7 @@
     filter: alpha(opacity=40);
     zoom: .3;
     margin-top: 2vh;
-    margin-right: 10vh;
+    margin-right: 3vh;
 }
 
 .js-icon:hover {
@@ -25,7 +25,7 @@
     opacity: 0.4;
     filter: alpha(opacity=40);
     zoom: .25;
-    margin-right: 10vh;
+    margin-right: 9vh;
 }
 
 .node-icon:hover {
@@ -37,9 +37,68 @@
     filter: alpha(opacity=40);
     zoom: .62;
     margin-bottom: 10vh;
-    margin-right: 10vh;
 }
 
 .css-icon:hover {
+    opacity: 1;
+}
+
+.html-icon {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    zoom: .125;
+    margin-top: 7vh;
+    margin-left: 7vh;
+}
+
+.html-icon:hover {
+    opacity: 1;
+}
+
+.react-icon {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    zoom: .3;
+    /* margin-top: 7vh; */
+    margin-right: 5vh;
+}
+
+.react-icon:hover {
+    opacity: 1;
+}
+
+.java-icon {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    zoom: .045;
+    margin-top: 7vh;
+    margin-left: 7vh;
+}
+
+.java-icon:hover {
+    opacity: 1;
+}
+
+.cplus-icon {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    zoom: .25;
+    margin-top: 5vh;
+    margin-left: 10vh;
+}
+
+.cplus-icon:hover {
+    opacity: 1;
+}
+
+.python-icon {
+    opacity: 0.4;
+    filter: alpha(opacity=40);
+    zoom: .075;
+    margin-top: 5vh;
+    margin-left: 25vh;
+}
+
+.python-icon:hover {
     opacity: 1;
 }

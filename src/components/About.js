@@ -12,7 +12,7 @@ class About extends React.Component {
     }
 
     h2Style = {
-        backgroundColor: '#DCDCAA',
+        backgroundColor: '#1a1a1a',
         height: '13%%',
         textAlign: 'center',
         display: 'flex',
@@ -60,12 +60,19 @@ class About extends React.Component {
 
                     </div>
                     <div style={this.columnStyle}>
-                        <h4 style={{color: '#4EC9B0', borderBottom: '.3vh solid #4EC9B0', width: '70%'}}>Technologies</h4>
-                        <div style={{display: 'flex', flexDirection: 'row', marginTop: '2vh'}}>
+                        <h4 style={{color: '#4EC9B0', borderBottom: '.3vh solid #4EC9B0', width: '70%'}}>Languages and Technologies</h4>
+                        <div style={{display: 'flex', flexDirection: 'row', marginTop: '5vh', height: '33%'}}>
                             <p><a href="https://guides.rubyonrails.org/" target="_blank"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png" /></a></p>
-                            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img class="js-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/OttawaJS.svg/240px-OttawaJS.svg.png" /></a></p>
                             <p><a href="https://nodejs.org/en/docs/" target="_blank"><img class="node-icon" src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" /></a></p>
+                            <p><a href="https://reactjs.org/" target="_blank"><img class="react-icon" src="https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png" /></a></p>
+                            <p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img class="js-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/OttawaJS.svg/240px-OttawaJS.svg.png" /></a></p>
                             <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"><img class="css-icon" src="https://img.icons8.com/color/144/000000/css3.png"/></a></p>
+                            <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"><img class="html-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/600px-HTML5_Badge.svg.png"/></a></p>
+                        </div>
+                        <div style={{display: 'flex', flexDirection: 'row', marginTop: '0vh'}}>
+                            <p><a href="https://docs.oracle.com/en/java/" target="_blank"><img class="java-icon" src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png"/></a></p>
+                            <p><a href="https://devdocs.io/cpp/" target="_blank"><img class="cplus-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/306px-ISO_C%2B%2B_Logo.svg.png"/></a></p>
+                            <p><a href="https://docs.python.org/3/" target="_blank"><img class="python-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"/></a></p>
                         </div>
                     </div>
                 </div>
