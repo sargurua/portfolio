@@ -11,6 +11,9 @@ class Portfolio extends React.Component {
             <div>
                 <Welcome/>
                 <About/>
+                <div style={{height: '100vh'}}>
+
+                </div>
             </div>
         )
     }
