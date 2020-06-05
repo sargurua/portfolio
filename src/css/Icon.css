@@ -127,3 +127,9 @@
 .mongo-icon:hover {
     opacity: 1;
 }
+
+.gcap-icon {
+    zoom: .1;
+    -webkit-mask: no-repeat center;
+    mask: no-repeat center;
+}

@@ -57,10 +57,14 @@ class About extends React.Component {
                 </Fade>
                 <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', width: '100%'}}>
                     <div style={this.columnStyle}>
+                        <h4 style={{color: '#4EC9B0', borderBottom: '.3vh solid #4EC9B0', width: '70%'}}>Education</h4>
+                        <div style={{display: 'flex', flexDirection: 'row', marginTop: '5vh', height: '33%'}}>
+                            <p><img class='gcap-icon' src="https://www.pngfind.com/pngs/m/23-236225_educated-blue-graduation-cap-icon-png-transparent-png.png"/></p>
+                        </div>
 
                     </div>
                     <div style={this.columnStyle}>
-                        <h4 style={{color: '#4EC9B0', borderBottom: '.3vh solid #4EC9B0', width: '70%'}}>Languages and Technologies</h4>
+                        <h4 style={{color: '#4EC9B0', borderBottom: '.3vh solid #4EC9B0', width: '70%'}}>Proficiencies</h4>
                         <div style={{display: 'flex', flexDirection: 'row', marginTop: '5vh', height: '33%'}}>
                             <p><a href="https://guides.rubyonrails.org/" target="_blank"><img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/1/16/Ruby_on_Rails-logo.png" /></a></p>
                             <p><a href="https://nodejs.org/en/docs/" target="_blank"><img class="node-icon" src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" /></a></p>
