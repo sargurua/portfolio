@@ -58,10 +58,18 @@ class About extends React.Component {
                 <div style={{display: 'flex', flexDirection: 'row', flexWrap: 'wrap', width: '100%'}}>
                     <div style={this.columnStyle}>
                         <h4 style={{color: '#4EC9B0', borderBottom: '.3vh solid #4EC9B0', width: '70%'}}>Education</h4>
-                        <div style={{display: 'flex', flexDirection: 'row', marginTop: '5vh', height: '33%'}}>
-                            <p><img class='gcap-icon' src="https://www.pngfind.com/pngs/m/23-236225_educated-blue-graduation-cap-icon-png-transparent-png.png"/></p>
+                        <div style={{display: 'flex', flexDirection: 'row', marginTop: '3vh', width: '70%'}}>
+                            <p style={{color: '#DCDCAA', fontSize: '110%', textAlign: 'left'}}>Northern Illinois University (2016 - 2019)</p>
                         </div>
-
+                        <p style={{color: '#DCDCAA', fontSize: '90%', textAlign: 'left', width: '70%'}}>- Bachelors of Computer Science</p>
+                        <p style={{color: '#DCDCAA', fontSize: '90%', textAlign: 'left', width: '70%'}}>- Java and Android Teaching Assistant</p>
+                        <p style={{color: '#DCDCAA', fontSize: '90%', textAlign: 'left', width: '70%'}}>- Object Orientation and Data Structures in Java, C, and C++</p>    
+                        <div style={{display: 'flex', flexDirection: 'row', marginTop: '3vh', width: '70%'}}>
+                            <p style={{color: '#DCDCAA', fontSize: '110%', textAlign: 'left'}}>Flatiron School (2019 - 2020)</p>
+                        </div>
+                        <p style={{color: '#DCDCAA', fontSize: '90%', textAlign: 'left', width: '70%'}}>- Software Engineering Focus</p>
+                        <p style={{color: '#DCDCAA', fontSize: '90%', textAlign: 'left', width: '70%'}}>- Talks with Google Participant</p>
+                        <p style={{color: '#DCDCAA', fontSize: '90%', textAlign: 'left', width: '70%'}}>- Web Application Development(Restful Routing, API's, and Oauth) in Rails, NodeJs, and React</p> 
                     </div>
                     <div style={this.columnStyle}>
                         <h4 style={{color: '#4EC9B0', borderBottom: '.3vh solid #4EC9B0', width: '70%'}}>Proficiencies</h4>
