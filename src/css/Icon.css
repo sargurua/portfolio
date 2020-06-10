@@ -3,6 +3,7 @@
    filter: alpha(opacity=40);
    zoom: .22;
    margin-right: 10vh;
+   transition: opacity .3s;
 }
 
 .icon:hover {
@@ -15,6 +16,7 @@
     zoom: .3;
     margin-top: 2vh;
     margin-right: 3vh;
+    transition: opacity .3s;
 }
 
 .js-icon:hover {
@@ -26,6 +28,7 @@
     filter: alpha(opacity=40);
     zoom: .25;
     margin-right: 9vh;
+    transition: opacity .3s;
 }
 
 .node-icon:hover {
@@ -36,6 +39,7 @@
     opacity: 0.4;
     filter: alpha(opacity=40);
     zoom: .62;
+    transition: opacity .3s;
 }
 
 .css-icon:hover {
@@ -48,6 +52,7 @@
     zoom: .125;
     margin-top: 7vh;
     margin-left: 7vh;
+    transition: opacity .3s;
 }
 
 .html-icon:hover {
@@ -60,6 +65,7 @@
     zoom: .3;
     /* margin-top: 7vh; */
     margin-right: 5vh;
+    transition: opacity .3s;
 }
 
 .react-icon:hover {
@@ -72,6 +78,7 @@
     zoom: .045;
     margin-top: 7vh;
     margin-left: 7vh;
+    transition: opacity .3s;
 }
 
 .java-icon:hover {
@@ -84,6 +91,7 @@
     zoom: .25;
     margin-top: 5vh;
     margin-left: 10vh;
+    transition: opacity .3s;
 }
 
 .cplus-icon:hover {
@@ -96,6 +104,7 @@
     zoom: .075;
     margin-top: 5vh;
     margin-left: 25vh;
+    transition: opacity .3s;
 }
 
 .python-icon:hover {
@@ -108,6 +117,7 @@
     zoom: .075;
     margin-top: 5vh;
     margin-left: 25vh;
+    transition: opacity .3s;
 }
 
 .post-icon:hover {
@@ -121,6 +131,7 @@
     margin-top: 1vh;
     margin-left: 1vh;
     margin-bottom: 6vh;
+    transition: opacity .3s;
 
 }
 
