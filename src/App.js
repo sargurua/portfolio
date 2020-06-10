@@ -20,11 +20,6 @@ class App extends React.Component {
   }
 
   sectionStyle = {
-    backgroundPosition: 'center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
-    backgroundImage: `url(${Background})`,
-    overflow: 'hidden'
   };
 
   content = {

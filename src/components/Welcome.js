@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Background from '../images/code_background_blur.png'
+
 import FadeIn from 'react-fade-in';
 import Button from 'react-bootstrap/Button'
 
@@ -10,7 +12,12 @@ class Welcome extends React.Component {
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'row',
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundImage: `url(${Background})`,
+        overflow: 'hidden'
     }
 
     elementStyling = {
