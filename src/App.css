@@ -47,7 +47,7 @@
   opacity: 1;
   background: #fff;
   width: 24em;
-  height: 28em;
+  height: 35em;
   border-radius: 0.6em;
   margin: 1em;
   overflow: hidden;
@@ -91,4 +91,7 @@
 
 .card-body {
   padding: 1.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
