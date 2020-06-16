@@ -1,9 +1,12 @@
 import React from 'react'
 
-import AuthThumbnail from '../images/auth_backend.png'
-import HoopThumbnail from '../images/wehoopin-thumbnail.png'
-import EventThumbnail from '../images/wegoin-thumbnail.png'
-import WerewolfThumbnail from  '../images/werewolf-thumbnail.png'
+import AuthThumbnail from '../images/thumbnails/auth_backend.png'
+import HoopThumbnail from '../images/thumbnails/wehoopin-thumbnail.png'
+import EventThumbnail from '../images/thumbnails/wegoin-thumbnail.png'
+import WerewolfThumbnail from  '../images/thumbnails/werewolf-thumbnail.png'
+import TpThumbnail from '../images/thumbnails/tp-thumbnail.png'
+import ScoopThumbnail from '../images/thumbnails/scoop-thumbnail.png'
+import RandomThumbnail from '../images/thumbnails/random-thumbnail.png'
 
 import Card from './Card'
 import Fade from 'react-reveal/Fade'
@@ -36,7 +39,7 @@ class Projects extends React.Component {
                         <Card
                             img={WerewolfThumbnail}
                             body='Ruby on Rails and React application. Web application version of board game One Night Ultimate Werewolf. User played live action game that updated users to the interactions of other players on their own character.'
-                            title='What I learned from my visit to The Upside Down'
+                            title='One Night Ultimate Werewolf'
                             author='Ruby on Rails, React, Action Cable, Websockets, API' 
                         />
                                                 <Card
