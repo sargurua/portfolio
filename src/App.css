@@ -95,3 +95,27 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+
+.modal-90w {
+  width: 90%;
+  max-width: 90%;
+  min-width: 90%;
+  background-color: #1a1a1a;
+}
+
+.modal-90w .modal-header {
+  border-bottom: 1px solid black;
+}
+
+.github-logo{
+  opacity: .5;
+  height: auto;
+  width: 5vh;
+  margin-top: .55vh;
+  margin-left: 5vh;
+  transition: opacity .3s;
+}
+
+.github-logo:hover{
+  opacity: 1;
+}
