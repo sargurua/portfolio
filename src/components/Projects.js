@@ -10,11 +10,22 @@ import RandomThumbnail from '../images/thumbnails/random-thumbnail.png'
 
 import Card from './Card'
 import Fade from 'react-reveal/Fade'
+import Modal from 'react-bootstrap/Modal'
 
 class Projects extends React.Component {
+    state =  {
+        authShow: false
+    }
+
+    openAuth = () => {
+        this.setState({
+            authShow: true
+        })
+    }
+
     render() {
         return (
-            <div style={{height: '100vh', backgroundColor: '#1a1a1a',}}>
+            <div style={{height: '100vh', backgroundColor: '#1a1a1a', width: '100%'}}>
                 <Fade bottom>
                     <h2 style={{color: '#4EC9B0', borderBottom: '.5vh solid #4EC9B0'}}>Projects</h2>
                     <div className='cards'>
@@ -23,6 +34,7 @@ class Projects extends React.Component {
                             title='Freelance Oauth Backend'
                             body='Freelance project to create User login, logout, edit, sign up, and tokenization API. Made using Rails with Devise and JWT.'
                             author='Ruby on Rails, Devise, JWT, API' 
+                            handleClick={this.openAuth}
                         />
                         <Card
                             img={HoopThumbnail}
@@ -42,12 +54,21 @@ class Projects extends React.Component {
                             title='One Night Ultimate Werewolf'
                             author='Ruby on Rails, React, Action Cable, Websockets, API' 
                         />
-                                                <Card
+                        <Card
                             img='https://picsum.photos/id/54/400/300'
                             title='What I learned from my visit to The Upside Down'
                             author='Nancy Wheeler' 
                         />
                     </div>
+                    <Modal
+                        show={this.state.authShow}
+                        onHide={() => this.setState({authShow: false})}
+                        style={{width: '90%', }}
+                    >
+                        <Modal.Header>Auth Modal</Modal.Header>
+                        <Modal.Body>Freelance project to create User login, logout, edit, sign up, and tokenization API. Made using Rails with Devise and JWT.'</Modal.Body>
+                        <Modal.Body><img src={AuthThumbnail}></img></Modal.Body>
+                    </Modal>
                 </Fade>
             </div>
         )
