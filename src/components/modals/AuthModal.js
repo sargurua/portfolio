@@ -15,7 +15,7 @@ class AuthModal extends React.Component {
                 dialogClassName='modal-90w'
             >
                 <Modal.Header style={{ justifyContent: 'center' }}>
-                    <h1>Auth Modal</h1>
+                    <h1>Oauth Backend</h1>
                     <div>
                         <img className='github-logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/1920px-Font_Awesome_5_brands_github.svg.png' />
                     </div>
