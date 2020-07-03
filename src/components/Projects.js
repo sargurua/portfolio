@@ -2,6 +2,7 @@ import React from 'react'
 
 import AuthModal from "./modals/AuthModal"
 import HoopModal from "./modals/HoopModal"
+import EventModal from "./modals/EventModal"
 
 import AuthThumbnail from '../images/thumbnails/auth_backend.png'
 import HoopThumbnail from '../images/thumbnails/wehoopin-thumbnail.png'
@@ -18,7 +19,8 @@ import Modal from 'react-bootstrap/Modal'
 class Projects extends React.Component {
     state =  {
         authShow: false,
-        hoopShow: false
+        hoopShow: false,
+        goShow: false
     }
 
     openAuth = () => {
@@ -63,7 +65,8 @@ class Projects extends React.Component {
                             img={EventThumbnail}
                             title='Event Scheduler'
                             body='Ruby on Rails application. Allowed users to create events, users could then see all events that have not passed and join them. Allowed users to friend request other users to see all their events.'
-                            author='Ruby on Rails, JWT, Devise' 
+                            author='Ruby on Rails, JWT, Devise'
+                            handleClick={() => {this.setState({goShow: true})}} 
                         />
                         <Card
                             img={WerewolfThumbnail}
@@ -89,6 +92,7 @@ class Projects extends React.Component {
                     </div>
                     <AuthModal authShow={this.state.authShow} closeAuth={() => {this.setState({authShow: false})}}/>
                     <HoopModal hoopShow={this.state.hoopShow} closeHoop={() => {this.setState({hoopShow: false})}}/>
+                    <EventModal goShow={this.state.goShow} closeEvent={() => { this.setState({ goShow: false })}}/>
                 </Fade>
             </div>
         )
