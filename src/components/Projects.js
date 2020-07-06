@@ -3,6 +3,7 @@ import React from 'react'
 import AuthModal from "./modals/AuthModal"
 import HoopModal from "./modals/HoopModal"
 import EventModal from "./modals/EventModal"
+import WerewolfModal from "./modals/WerewolfModal"
 
 import AuthThumbnail from '../images/thumbnails/auth_backend.png'
 import HoopThumbnail from '../images/thumbnails/wehoopin-thumbnail.png'
@@ -20,7 +21,8 @@ class Projects extends React.Component {
     state =  {
         authShow: false,
         hoopShow: false,
-        goShow: false
+        goShow: false,
+        wolfShow: false
     }
 
     openAuth = () => {
@@ -72,7 +74,8 @@ class Projects extends React.Component {
                             img={WerewolfThumbnail}
                             body='Ruby on Rails and React application. Web application version of board game One Night Ultimate Werewolf. User played live action game that updated users to the interactions of other players on their own character.'
                             title='One Night Ultimate Werewolf'
-                            author='Ruby on Rails, React, Action Cable, Websockets, API' 
+                            author='Ruby on Rails, React, Action Cable, Websockets, API'
+                            handleClick={() => {this.setState({wolfShow: true})}}
                         />
                         <Card
                             img={TpThumbnail}
@@ -93,6 +96,7 @@ class Projects extends React.Component {
                     <AuthModal authShow={this.state.authShow} closeAuth={() => {this.setState({authShow: false})}}/>
                     <HoopModal hoopShow={this.state.hoopShow} closeHoop={() => {this.setState({hoopShow: false})}}/>
                     <EventModal goShow={this.state.goShow} closeEvent={() => { this.setState({ goShow: false })}}/>
+                    <WerewolfModal wolfShow={this.state.wolfShow} closeEvent={() => {this.setState({wolfShow: false})}} />
                 </Fade>
             </div>
         )
