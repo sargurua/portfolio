@@ -22,7 +22,8 @@ class Projects extends React.Component {
         authShow: false,
         hoopShow: false,
         goShow: false,
-        wolfShow: false
+        wolfShow: false,
+        tpShow: false
     }
 
     openAuth = () => {
@@ -80,7 +81,8 @@ class Projects extends React.Component {
                         <Card
                             img={TpThumbnail}
                             title='TP Report'
-                            author='React, Redux, GraphQL, NodeJs, Express, Google Maps' 
+                            author='React, Redux, GraphQL, NodeJs, Express, Google Maps'
+                            handleClick={() => {this.setState({tpShow: true})}}
                         />
                         <Card
                             img={ScoopThumbnail}
@@ -97,6 +99,7 @@ class Projects extends React.Component {
                     <HoopModal hoopShow={this.state.hoopShow} closeHoop={() => {this.setState({hoopShow: false})}}/>
                     <EventModal goShow={this.state.goShow} closeEvent={() => { this.setState({ goShow: false })}}/>
                     <WerewolfModal wolfShow={this.state.wolfShow} closeEvent={() => {this.setState({wolfShow: false})}} />
+                    <TpModal tpShow={this.state.tpShow} closeEvent={() => {this.setState({tpShow: false})}} />
                 </Fade>
             </div>
         )
