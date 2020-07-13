@@ -4,6 +4,7 @@ import AuthModal from "./modals/AuthModal"
 import HoopModal from "./modals/HoopModal"
 import EventModal from "./modals/EventModal"
 import WerewolfModal from "./modals/WerewolfModal"
+import ScoopModal from "./modals/ScoopModal"
 
 import AuthThumbnail from '../images/thumbnails/auth_backend.png'
 import HoopThumbnail from '../images/thumbnails/wehoopin-thumbnail.png'
@@ -23,7 +24,8 @@ class Projects extends React.Component {
         hoopShow: false,
         goShow: false,
         wolfShow: false,
-        tpShow: false
+        tpShow: false,
+        scoopShow: false
     }
 
     openAuth = () => {
@@ -88,6 +90,7 @@ class Projects extends React.Component {
                             img={ScoopThumbnail}
                             title='Scoop Group'
                             author='Ruby on Rails, Javascript, HTML, CSS, Google Maps' 
+                            handleClick={() => {this.setState({scoopShow: true})}}
                         />
                         <Card
                             img={RandomThumbnail}
@@ -100,6 +103,7 @@ class Projects extends React.Component {
                     <EventModal goShow={this.state.goShow} closeEvent={() => { this.setState({ goShow: false })}}/>
                     <WerewolfModal wolfShow={this.state.wolfShow} closeEvent={() => {this.setState({wolfShow: false})}} />
                     <TpModal tpShow={this.state.tpShow} closeEvent={() => {this.setState({tpShow: false})}} />
+                    <ScoopModal scoopShow={this.state.scoopShow} closeEven={() => {this.setState({scoopShow: false})}} />
                 </Fade>
             </div>
         )
