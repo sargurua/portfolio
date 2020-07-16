@@ -5,6 +5,7 @@ import HoopModal from "./modals/HoopModal"
 import EventModal from "./modals/EventModal"
 import WerewolfModal from "./modals/WerewolfModal"
 import ScoopModal from "./modals/ScoopModal"
+import RandomModal from "./modals/RandomModal"
 
 import AuthThumbnail from '../images/thumbnails/auth_backend.png'
 import HoopThumbnail from '../images/thumbnails/wehoopin-thumbnail.png'
@@ -25,7 +26,8 @@ class Projects extends React.Component {
         goShow: false,
         wolfShow: false,
         tpShow: false,
-        scoopShow: false
+        scoopShow: false,
+        randomShow: false
     }
 
     openAuth = () => {
@@ -96,6 +98,7 @@ class Projects extends React.Component {
                             img={RandomThumbnail}
                             title='Nba Player Randomizer'
                             author='Ruby on Rails, React, API, NBA API' 
+                            handleClick={() => {this.setState({randomShow: true})}}
                         />
                     </div>
                     <AuthModal authShow={this.state.authShow} closeAuth={() => {this.setState({authShow: false})}}/>
@@ -103,7 +106,8 @@ class Projects extends React.Component {
                     <EventModal goShow={this.state.goShow} closeEvent={() => { this.setState({ goShow: false })}}/>
                     <WerewolfModal wolfShow={this.state.wolfShow} closeEvent={() => {this.setState({wolfShow: false})}} />
                     <TpModal tpShow={this.state.tpShow} closeEvent={() => {this.setState({tpShow: false})}} />
-                    <ScoopModal scoopShow={this.state.scoopShow} closeEven={() => {this.setState({scoopShow: false})}} />
+                    <ScoopModal scoopShow={this.state.scoopShow} closeEvent={() => {this.setState({scoopShow: false})}} />
+                    <RandomModal randomShow={this.state.randomShow} closeEvent={() => {this.setState({randomShow: false})}} />
                 </Fade>
             </div>
         )
