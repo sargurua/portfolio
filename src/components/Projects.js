@@ -30,24 +30,6 @@ class Projects extends React.Component {
         randomShow: false
     }
 
-    openAuth = () => {
-        this.setState({
-            authShow: true
-        })
-    }
-
-    closeAuth = () => {
-        this.setState({
-            authShow: false
-        })
-    }
-
-    openHoop = () => {
-        this.setState({
-            hoopShow: true
-        })
-    }
-
     render() {
         return (
             <div style={{backgroundColor: '#1a1a1a', width: '100%'}}>
@@ -59,14 +41,14 @@ class Projects extends React.Component {
                             title='Freelance Oauth Backend'
                             body='Freelance project to create User login, logout, edit, sign up, and tokenization API. Made using Rails with Devise and JWT.'
                             author='Ruby on Rails, Devise, JWT, API' 
-                            handleClick={this.openAuth}
+                            handleClick={() => {this.setState({authShow: true})}}
                         />
                         <Card
                             img={HoopThumbnail}
                             title='WeHoopin'
                             body='NodeJS and React Application. NBA application that showed summarization of the previous days top performers and best games. Also used algorithmic computation to predict teams true records.'
                             author='NodeJs, Express, React, Redux, NBA API' 
-                            handleClick={this.openHoop}
+                            handleClick={() => {this.setState({hoopShow: true})}}
                         />
                         <Card
                             img={EventThumbnail}
