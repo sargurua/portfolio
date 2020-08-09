@@ -6,6 +6,7 @@ import EventModal from "./modals/EventModal"
 import WerewolfModal from "./modals/WerewolfModal"
 import ScoopModal from "./modals/ScoopModal"
 import RandomModal from "./modals/RandomModal"
+import TpModal from "./modals/TpModal"
 
 import AuthThumbnail from '../images/thumbnails/auth_backend.png'
 import HoopThumbnail from '../images/thumbnails/wehoopin-thumbnail.png'
@@ -17,7 +18,6 @@ import RandomThumbnail from '../images/thumbnails/random-thumbnail.png'
 
 import Card from './Card'
 import Fade from 'react-reveal/Fade'
-import Modal from 'react-bootstrap/Modal'
 
 class Projects extends React.Component {
     state =  {
