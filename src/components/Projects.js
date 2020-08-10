@@ -67,19 +67,22 @@ class Projects extends React.Component {
                         <Card
                             img={TpThumbnail}
                             title='TP Report'
+                            body="React and NodeJs with Express application. Used Google Maps and Places API to allow user to report availability of toilet paper in their local grocery stores. Reports were store in a GraphQL backend. The purpose of the site was to encourage social distancing."
                             author='React, Redux, GraphQL, NodeJs, Express, Google Maps'
                             handleClick={() => {this.setState({tpShow: true})}}
                         />
                         <Card
                             img={ScoopThumbnail}
                             title='Scoop Group'
+                            body="Ruby on Rails and Javascript application. Used Google Maps and Places API to show nearby ice cream locations to current whereabouts. Using location data app could identify current position and locations around it."
                             author='Ruby on Rails, Javascript, HTML, CSS, Google Maps' 
                             handleClick={() => {this.setState({scoopShow: true})}}
                         />
                         <Card
                             img={RandomThumbnail}
                             title='Nba Player Randomizer'
-                            author='Ruby on Rails, React, API, NBA API' 
+                            author='Ruby on Rails, React, API, NBA API'
+                            body="Ruby on Rails and React application. Quick application I made using my experience from WeHoopin. A friend of mine would play NBA2k and wanted to make a way to randomize our teams to add a luck element, so I created a quick generator to display names, teams, pictures, and positions" 
                             handleClick={() => {this.setState({randomShow: true})}}
                         />
                     </div>
