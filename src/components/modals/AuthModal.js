@@ -16,9 +16,6 @@ class AuthModal extends React.Component {
             >
                 <Modal.Header style={{ justifyContent: 'center' }}>
                     <h1>Oauth Backend</h1>
-                    <div>
-                        <img className='github-logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/1920px-Font_Awesome_5_brands_github.svg.png' />
-                    </div>
                 </Modal.Header>
                 <Modal.Body style={{ display: 'flex', justifyContent: 'center' }}><img style={{ width: 'auto', height: '60vh' }} src={AuthThumbnail}></img></Modal.Body>
                 <Modal.Body>I Worked on this Freelance project with the goal of creating an Auth Rails API Backend. Essentially the client just needed a template for User authorization set up. Using Devise and JWT I was able to set request to the backend sending either tokenization of user information or error message. </Modal.Body>

@@ -17,11 +17,7 @@ class ScoopModal extends React.Component {
             >
                 <Modal.Header style={{ justifyContent: 'center' }}>
                     <h1>Scoop Group</h1>
-                    <div>
-                        <img className='github-logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/1920px-Font_Awesome_5_brands_github.svg.png' />
-                    </div>
                 </Modal.Header>
-                <Modal.Title style={{ display: 'flex', justifyContent: 'center' }}>Demo</Modal.Title>
                 <Modal.Body><YouTube id="cyVzTf9XLN0" /></Modal.Body>
                 <Modal.Body>Me and a cohort mate one day wanted ice cream but neither of us knew the loop very well. We asked around but wasn't sure the level of ice cream other people held as  their standard. We thought of a place where ice cream afficiinados could look for local spots near them and hear fellow  ice cream elitists opinions on the quality. This dream became our application known as Scoop Group</Modal.Body>
                 <Modal.Body style={{ display: 'flex', justifyContent: 'center' }}><img style={{ width: 'auto', height: '60vh' }} src={ScoopThumbnail}></img></Modal.Body>

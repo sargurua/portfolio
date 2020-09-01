@@ -15,9 +15,6 @@ class RandomModal extends React.Component {
             >
                 <Modal.Header style={{ justifyContent: 'center' }}>
                     <h1>WeGoin</h1>
-                    <div>
-                        <img className='github-logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/1920px-Font_Awesome_5_brands_github.svg.png' />
-                    </div>
                 </Modal.Header>
                 <Modal.Body style={{ display: 'flex', justifyContent: 'center' }}><img style={{ width: 'auto', height: '60vh' }} src={RandomThumbnail}></img></Modal.Body>
                 <Modal.Body>With the purpose of ending all scheduling conflicts me and some friends created a application to schedule events and confirm attendance along with providing event location and times. </Modal.Body>

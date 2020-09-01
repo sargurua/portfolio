@@ -20,11 +20,7 @@ class AuthModal extends React.Component {
             >
                 <Modal.Header style={{ justifyContent: 'center' }}>
                     <h1>WeHoopin</h1>
-                    <div>
-                        <img className='github-logo' src='https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Font_Awesome_5_brands_github.svg/1920px-Font_Awesome_5_brands_github.svg.png' />
-                    </div>
                 </Modal.Header>
-                <Modal.Title style={{ display: 'flex', justifyContent: 'center' }}>Demo</Modal.Title>
                 <Modal.Body><YouTube id="U4JEXnRi5v0" /></Modal.Body>
                 <Modal.Body style={{ display: 'flex', justifyContent: 'center' }}><img style={{ width: 'auto', height: '60vh' }} src={HoopThumbnail}></img></Modal.Body>
                 <Modal.Body>Probably my personal favorite project I have ever worked on weHoopin was the answer to the problem of clicking 17 links every time I wanted information from ESPN and the question, "How can I stay up to date on basketball while spending 14hrs a day coding during a bootcamp?".  </Modal.Body>
